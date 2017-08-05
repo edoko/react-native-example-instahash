@@ -19,7 +19,7 @@ export default class Inputs extends Component {
     };
 
     const launchInsta = () => {
-      Linking.openURL('instagram://library')
+      Linking.openURL('instagram://app')
     };
 
     return (
@@ -40,7 +40,7 @@ export default class Inputs extends Component {
             복사하기
             </Text>
           </Button>
-          <Button onPress={launchInsta} style={{alignSelf: 'center', marginTop: 20}}>
+          <Button warning onPress={launchInsta} style={{alignSelf: 'center', marginTop: 20}}>
             <Text>
             인스타그램 실행
             </Text>
