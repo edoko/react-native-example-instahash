@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, Clipboard } from 'react-native';
-
 import { Content, Item, Input, Button, Text, Label, Form, Icon } from 'native-base';
-
 import AppLink from 'react-native-app-link';
-
 import I18n from 'react-native-i18n'
-
 
 export default class Inputs extends Component {
   constructor(props) {
@@ -20,7 +16,6 @@ export default class Inputs extends Component {
 
     const onCopy = () => {
       Clipboard.setString(bar);
-      console.log('dfdfd');
     };
 
     const launchInsta = () => {
