@@ -76,9 +76,7 @@ const styles = StyleSheet.create({
   }
 });
 
-// Enable fallbacks if you want `en-US` and `en-GB` to fallback to `en`
 I18n.fallbacks = true
-
 I18n.translations = {
   en: {
     text_1: 'Text here.',
