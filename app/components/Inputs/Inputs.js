@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Clipboard } from 'react-native';
+import { StyleSheet, Clipboard, Linking } from 'react-native';
 
 import { Content, Item, Input, Button, Text, Label, Form, Icon } from 'native-base';
 
@@ -10,12 +10,16 @@ export default class Inputs extends Component {
   }
   
   render() {
-    
+
     let bar;
 
     const onCopy = () => {
       Clipboard.setString(bar);
       console.log('dfdfd');
+    };
+
+    const launchInsta = () => {
+      Linking.openURL('instagram://library')
     };
 
     return (
@@ -34,6 +38,11 @@ export default class Inputs extends Component {
           <Button onPress={onCopy} style={{alignSelf: 'center', marginTop: 50}}>
             <Text>
             복사하기
+            </Text>
+          </Button>
+          <Button onPress={launchInsta} style={{alignSelf: 'center', marginTop: 20}}>
+            <Text>
+            인스타그램 실행
             </Text>
           </Button>
         </Content>
